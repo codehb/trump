@@ -20,6 +20,15 @@ function resize() {
 	canvas.height = window.innerHeight;
 	render();
 }
+function rightclick(event) {
+  if (event.button == 2) {
+	  const context = canvas.getContext('2d');
+
+	  context.clearRect(0, 0, canvas.width, canvas.height);
+	  alert("Trumps will be deleted")
+
+  }
+}
 window.addEventListener('resize', resize, false); resize();
 function render() { // draw to screen here
 }
